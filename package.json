@@ -12,14 +12,18 @@
     "@react-router/node": "7.15.1",
     "@react-router/serve": "7.15.1",
     "isbot": "^5.1.36",
+    "lucide-react": "^1.16.0",
+    "nodemailer": "^8.0.9",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router": "7.15.1"
   },
   "devDependencies": {
+    "@netlify/remix-adapter": "^3.0.0",
     "@react-router/dev": "7.15.1",
     "@tailwindcss/vite": "^4.2.2",
     "@types/node": "^22",
+    "@types/nodemailer": "^8.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "tailwindcss": "^4.2.2",

@@ -1,29 +1,20 @@
-import { useState } from "react";
+import { useEffect, useRef } from "react";
+import { useFetcher } from "react-router";
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    company: "",
-    service: "",
-    message: "",
-  });
+  const fetcher = useFetcher<{ success: boolean; error?: string }>();
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  const isSubmitting = fetcher.state !== "idle";
+  const result = fetcher.data;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  useEffect(() => {
+    if (result?.success) {
+      formRef.current?.reset();
+    }
+  }, [result]);
 
-  if (submitted) {
+  if (result?.success) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
         <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
@@ -56,7 +47,18 @@ export default function ContactForm() {
     "w-full border border-gray-soft rounded-xl px-4 py-3 text-sm text-dark bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-muted/50";
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+    <fetcher.Form
+      ref={formRef}
+      method="post"
+      action="/contact"
+      className="flex flex-col gap-5"
+    >
+      {result?.error && (
+        <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700">
+          {result.error}
+        </div>
+      )}
+
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-xs font-semibold text-dark mb-2 uppercase tracking-wide">
@@ -67,8 +69,6 @@ export default function ContactForm() {
             name="name"
             required
             placeholder="Your full name"
-            value={form.name}
-            onChange={handleChange}
             className={inputClass}
           />
         </div>
@@ -81,8 +81,6 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="your@email.com"
-            value={form.email}
-            onChange={handleChange}
             className={inputClass}
           />
         </div>
@@ -97,8 +95,6 @@ export default function ContactForm() {
             type="text"
             name="company"
             placeholder="Your organisation"
-            value={form.company}
-            onChange={handleChange}
             className={inputClass}
           />
         </div>
@@ -106,23 +102,24 @@ export default function ContactForm() {
           <label className="block text-xs font-semibold text-dark mb-2 uppercase tracking-wide">
             Service of Interest
           </label>
-          <select
-            name="service"
-            value={form.service}
-            onChange={handleChange}
-            className={inputClass}
-          >
+          <select name="service" className={inputClass}>
             <option value="">Select a service</option>
-            <option value="healthtech">HealthTech Software Development</option>
-            <option value="concierge">Medical Concierge Services</option>
-            <option value="hospital-management">
+            <option value="HealthTech Software Development">
+              HealthTech Software Development
+            </option>
+            <option value="Medical Concierge Services">
+              Medical Concierge Services
+            </option>
+            <option value="Hospital Management Services">
               Hospital Management Services
             </option>
-            <option value="equipment">
-              Medical Equipment Supply & Support
+            <option value="Medical Equipment Supply & Support">
+              Medical Equipment Supply &amp; Support
             </option>
-            <option value="training">Clinical & Non-Clinical Training</option>
-            <option value="general">General Enquiry</option>
+            <option value="Clinical & Non-Clinical Training">
+              Clinical &amp; Non-Clinical Training
+            </option>
+            <option value="General Enquiry">General Enquiry</option>
           </select>
         </div>
       </div>
@@ -136,18 +133,38 @@ export default function ContactForm() {
           required
           rows={5}
           placeholder="Tell us about your organisation and how we can help..."
-          value={form.message}
-          onChange={handleChange}
           className={`${inputClass} resize-none`}
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-primary text-white font-medium py-4 rounded-full hover:bg-primary-dark transition-colors duration-200 text-sm mt-2"
+        disabled={isSubmitting}
+        className="w-full bg-primary text-white font-medium py-4 rounded-full hover:bg-primary-dark disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-200 text-sm mt-2 flex items-center justify-center gap-2"
       >
-        Send Message
+        {isSubmitting ? (
+          <>
+            <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              />
+            </svg>
+            Sending…
+          </>
+        ) : (
+          "Send Message"
+        )}
       </button>
-    </form>
+    </fetcher.Form>
   );
 }
