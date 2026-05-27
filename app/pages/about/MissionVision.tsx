@@ -11,21 +11,20 @@ export default function MissionVision() {
               Intelligent Healthcare Infrastructure for a Smarter Future
             </h2>
             <p className="text-base text-muted leading-relaxed mb-5">
-              At Octave Smartcare, we combine healthcare expertise, digital
-              innovation, and operational excellence to help healthcare
-              organisations deliver safer, faster, and more connected care.
+              Octave Smartcare brings together healthcare expertise and
+              practical technology to help organisations deliver better care. We
+              cover digital health, clinical operations, medical infrastructure,
+              and workforce development.
             </p>
             <p className="text-base text-muted leading-relaxed mb-5">
-              We support hospitals, clinics, governments, healthcare investors,
-              and enterprise healthcare providers with end-to-end healthcare
-              transformation solutions across digital health, clinical
-              operations, medical infrastructure, and workforce development.
+              Our clients include hospitals, clinics, health agencies, corporate
+              providers, and healthcare investors in the UK, Nigeria, and
+              beyond.
             </p>
             <p className="text-base text-muted leading-relaxed">
-              From healthcare technology deployment to hospital management and
-              specialist medical concierge support, Octave Smartcare is built
-              to bridge the gap between healthcare delivery and modern
-              innovation.
+              We handle the full picture: from strategy and technology
+              deployment to hospital management and specialist concierge
+              support.
             </p>
           </div>
 
@@ -48,8 +47,8 @@ export default function MissionVision() {
               </span>
               <p className="text-xl lg:text-2xl font-display leading-relaxed">
                 To improve healthcare access, efficiency, and patient outcomes
-                through intelligent healthcare solutions, operational
-                excellence, and technology-driven innovation.
+                through practical solutions and the right technology for each
+                context.
               </p>
             </div>
           </div>
@@ -60,8 +59,8 @@ export default function MissionVision() {
                 Our Approach
               </span>
               <p className="text-xl lg:text-2xl font-display text-dark leading-relaxed">
-                Delivering integrated, end-to-end healthcare solutions that are
-                scalable, compliant, and built for real-world performance.
+                We take on complex healthcare challenges from planning to
+                delivery and stay involved to make sure things work in practice.
               </p>
             </div>
           </div>

@@ -4,27 +4,27 @@ const differentiators = [
   {
     title: "Healthcare Expertise",
     description:
-      "Deep understanding of healthcare operations, digital transformation, and patient-centred service delivery.",
+      "We understand how healthcare organisations actually operate; the pressures, the constraints, and what good looks like on the ground.",
   },
   {
-    title: "Technology-Driven Solutions",
+    title: "Practical Technology",
     description:
-      "Modern, scalable, and secure healthcare technologies tailored for real-world healthcare environments.",
+      "We build and deploy tools that work in real healthcare environments. Not overly complex, not underpowered.",
   },
   {
-    title: "End-to-End Service Delivery",
+    title: "One Partner, Full Scope",
     description:
-      "From strategy and procurement to implementation and support, we provide integrated healthcare solutions under one trusted partner.",
+      "From strategy through to implementation and ongoing support. One team, one relationship, fewer gaps.",
   },
   {
-    title: "Operational Excellence",
+    title: "Focus on Results",
     description:
-      "We focus on measurable improvements in efficiency, patient outcomes, workforce performance, and system sustainability.",
+      "We track what matters: operational performance, patient experience, and whether the work we did is still working.",
   },
   {
-    title: "Global Outlook",
+    title: "Global Reach",
     description:
-      "Built to support healthcare systems, institutions, and organisations across emerging and developed markets.",
+      "We operate across the UK, Nigeria, and other markets. Experienced in both developed and emerging healthcare environments.",
   },
 ];
 
@@ -38,12 +38,11 @@ export default function WhyUs() {
               Why Octave Smartcare
             </span>
             <h2 className="text-3xl lg:text-4xl font-display text-dark leading-tight mb-6">
-              A Partner Built for Healthcare
+              A partner who stays involved
             </h2>
             <p className="text-base text-muted leading-relaxed mb-8">
-              We don't just provide services — we become an extension of your
-              organisation, committed to delivering sustainable outcomes that
-              make a real difference in healthcare delivery.
+              We don't hand over a solution and disappear. We stay close, track
+              what's working, and adjust until we get results that matter.
             </p>
 
             <div className="flex flex-col gap-6">
@@ -85,9 +84,19 @@ export default function WhyUs() {
             to="/contact"
             className="inline-flex items-center gap-2 bg-primary text-white font-medium px-8 py-4 rounded-full hover:bg-primary-dark transition-colors text-sm"
           >
-            Start a Conversation
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            Get in Touch
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>

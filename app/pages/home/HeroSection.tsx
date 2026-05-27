@@ -24,8 +24,8 @@ export default function HeroSection() {
 
           <p className="text-lg lg:text-xl text-white/80 leading-relaxed max-w-2xl mb-10">
             We work with hospitals, clinics, governments, and investors to make
-            healthcare more effective — through technology, better operations,
-            and the right infrastructure.
+            healthcare more effective through technology, better operations, and
+            the right infrastructure.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -34,8 +34,18 @@ export default function HeroSection() {
               className="inline-flex items-center justify-center gap-2 bg-primary text-white font-medium px-8 py-4 rounded-full hover:bg-blue transition-colors duration-200 text-sm"
             >
               Our Services
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
             <Link

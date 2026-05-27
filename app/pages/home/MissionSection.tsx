@@ -22,31 +22,28 @@ export default function MissionSection() {
               Our Mission
             </span>
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-display text-dark leading-tight mb-6">
-              Improving Healthcare Through Intelligent Solutions
+              Better healthcare, built on the right foundations
             </h2>
             <p className="text-lg text-muted leading-relaxed mb-6">
               To improve healthcare access, efficiency, and patient outcomes
-              through intelligent healthcare solutions, operational excellence,
-              and technology-driven innovation.
+              through practical solutions, good operations, and the right
+              technology for each context.
             </p>
             <p className="text-base text-muted leading-relaxed mb-8">
-              We support hospitals, clinics, governments, healthcare investors,
-              and enterprise healthcare providers with end-to-end healthcare
-              transformation solutions across digital health, clinical
-              operations, medical infrastructure, and workforce development.
+              We work with hospitals, clinics, governments, and healthcare
+              investors across digital health, clinical operations, medical
+              infrastructure, and workforce development.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="/about"
-                className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:text-primary-dark transition-colors"
-              >
-                Learn About Us
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
+            <a
+              href="/about"
+              className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:text-primary-dark transition-colors"
+            >
+              Learn About Us
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

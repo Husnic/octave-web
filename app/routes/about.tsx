@@ -7,7 +7,7 @@ import CTASection from "~/pages/home/CTASection";
 
 export function meta() {
   return [
-    { title: "About — Octave Smartcare" },
+    { title: "About  Octave Smartcare" },
     {
       name: "description",
       content:

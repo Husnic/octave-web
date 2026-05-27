@@ -8,7 +8,7 @@ import type { Route } from "./+types/contact";
 
 export function meta() {
   return [
-    { title: "Contact — Octave Smartcare" },
+    { title: "Contact  Octave Smartcare" },
     {
       name: "description",
       content:
@@ -44,7 +44,7 @@ export async function action({ request }: Route.ActionArgs) {
     await transporter.sendMail({
       from: process.env.SMTP_FROM || "hello@octavesmartcare.co.uk",
       to: process.env.CONTACT_EMAIL || "hello@octavesmartcare.co.uk",
-      subject: `Octave Smartcare — New Contact: ${service || "General Enquiry"}`,
+      subject: `Octave Smartcare  New Contact: ${service || "General Enquiry"}`,
       html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
@@ -60,7 +60,10 @@ export async function action({ request }: Route.ActionArgs) {
     return { success: true };
   } catch (err) {
     console.error("Email send error:", err);
-    return { success: false, error: "Failed to send message. Please try again or email us directly." };
+    return {
+      success: false,
+      error: "Failed to send message. Please try again or email us directly.",
+    };
   }
 }
 

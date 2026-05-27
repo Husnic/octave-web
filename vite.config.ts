@@ -5,7 +5,11 @@ import { defineConfig } from "vite";
 import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), netlifyPlugin()],
+  plugins: [
+    tailwindcss(),
+    reactRouter(),
+    // netlifyPlugin()
+  ],
   resolve: {
     tsconfigPaths: true,
   },

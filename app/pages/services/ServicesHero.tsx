@@ -1,18 +1,18 @@
 export default function ServicesHero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 gradient-dark dot-pattern overflow-hidden">
+    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 gradient-dark overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl">
           <span className="inline-block text-accent text-xs font-semibold uppercase tracking-widest mb-5">
             Our Services
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-white leading-tight mb-6">
-            End-to-End Healthcare Transformation Solutions
+            What We Do
           </h1>
           <p className="text-lg text-white/75 leading-relaxed max-w-2xl">
-            Five integrated service lines designed to help healthcare
-            organisations modernise confidently, operate efficiently, and
-            deliver better outcomes at scale.
+            Five service areas technology, operations, equipment, concierge
+            care, and training. Use one or combine them based on what your
+            organisation needs.
           </p>
         </div>
 

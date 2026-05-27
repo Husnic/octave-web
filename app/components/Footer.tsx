@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,33 +13,16 @@ export default function Footer() {
               className="h-9 w-auto mb-4"
             />
             <p className="text-gray-soft text-sm leading-relaxed mt-4 max-w-xs">
-              Intelligent healthcare infrastructure for a smarter future.
-              Bridging healthcare delivery and modern innovation.
+              Healthcare technology, operations, and infrastructure under one
+              roof.
             </p>
-            <div className="flex items-center gap-3 mt-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:border-accent hover:text-accent transition-colors"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X"
-                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:border-accent hover:text-accent transition-colors"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </a>
-            </div>
+            <a
+              href="mailto:hello@octavesmartcare.co.uk"
+              className="inline-flex items-center gap-2 mt-5 text-sm text-gray-soft hover:text-white transition-colors"
+            >
+              <Mail className="w-4 h-4 text-accent" />
+              hello@octavesmartcare.co.uk
+            </a>
           </div>
 
           <div>
@@ -49,7 +33,7 @@ export default function Footer() {
               {[
                 { to: "/", label: "Home" },
                 { to: "/about", label: "About Us" },
-                { to: "/services", label: "Our Services" },
+                { to: "/services", label: "Services" },
                 { to: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.to}>
@@ -90,28 +74,32 @@ export default function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-widest text-gray-soft mb-5">
-              Contact
+              Offices
             </h4>
-            <ul className="flex flex-col gap-3">
-              <li>
-                <a
-                  href="mailto:hello@octavesmartcare.co.uk"
-                  className="text-sm text-gray-soft hover:text-white transition-colors"
-                >
-                  hello@octavesmartcare.co.uk
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.octavesmartcare.co.uk"
-                  className="text-sm text-gray-soft hover:text-white transition-colors"
-                >
-                  www.octavesmartcare.co.uk
-                </a>
-              </li>
-              <li className="text-sm text-gray-soft">+44 7990 464 460</li>
-              <li className="text-sm text-gray-soft">+234 906 767 1952</li>
-            </ul>
+            <div className="flex flex-col gap-5">
+              <div>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-1">
+                  Lagos
+                </p>
+                <p className="text-sm text-gray-soft leading-relaxed">
+                  14 Olatubosun Street
+                  <br />
+                  Shonibare Estate, Maryland
+                  <br />
+                  Ikeja, Lagos
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-1">
+                  London
+                </p>
+                <p className="text-sm text-gray-soft leading-relaxed">
+                  128 City Road
+                  <br />
+                  London, EC1V 2NX
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -119,9 +107,7 @@ export default function Footer() {
           <p className="text-sm text-gray-soft">
             © {new Date().getFullYear()} Octave Smartcare. All rights reserved.
           </p>
-          <p className="text-sm text-gray-soft">
-            Intelligent Healthcare Infrastructure
-          </p>
+          <p className="text-sm text-gray-soft">www.octavesmartcare.co.uk</p>
         </div>
       </div>
     </footer>

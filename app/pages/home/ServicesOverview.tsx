@@ -12,7 +12,7 @@ const services = [
     number: "02",
     title: "Medical Concierge Services",
     description:
-      "Premium, personalised healthcare coordination for individuals, executives, corporates, and international patients — from specialist referrals to medical travel.",
+      "Premium, personalised healthcare coordination for individuals, executives, corporates, and international patients  from specialist referrals to medical travel.",
     link: "/services#concierge",
   },
   {
@@ -60,8 +60,18 @@ export default function ServicesOverview() {
               className="inline-flex items-center gap-2 bg-primary text-white font-medium px-6 py-3 rounded-full hover:bg-primary-dark transition-colors text-sm"
             >
               View All Services
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
           </div>
@@ -69,10 +79,7 @@ export default function ServicesOverview() {
           <div className="lg:col-span-8">
             <div className="divide-y divide-gray-soft/50">
               {services.map((service) => (
-                <div
-                  key={service.number}
-                  className="py-8 group"
-                >
+                <div key={service.number} className="py-8 group">
                   <div className="flex gap-6">
                     <span className="text-4xl font-display font-bold text-accent/40 group-hover:text-accent transition-colors duration-300 select-none tabular-nums leading-none mt-1">
                       {service.number}
@@ -89,8 +96,18 @@ export default function ServicesOverview() {
                         className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:text-primary-dark transition-colors"
                       >
                         Learn more
-                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        <svg
+                          className="w-3.5 h-3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
                         </svg>
                       </Link>
                     </div>

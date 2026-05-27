@@ -10,7 +10,7 @@ import CTASection from "~/pages/home/CTASection";
 
 export function meta(_: Route.MetaArgs) {
   return [
-    { title: "Octave Smartcare — Intelligent Healthcare Infrastructure" },
+    { title: "Octave Smartcare  Intelligent Healthcare Infrastructure" },
     {
       name: "description",
       content:

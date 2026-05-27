@@ -10,9 +10,9 @@ const services = [
     number: "01",
     title: "HealthTech Software Development",
     intro:
-      "We design and deploy scalable healthcare technology solutions tailored for modern healthcare systems.",
+      "We build and deploy healthcare software for organisations that need reliable, practical digital systems.",
     description:
-      "Our digital health solutions help healthcare providers streamline operations, improve patient engagement, strengthen clinical workflows, and support data-driven decision making.",
+      "Our solutions help providers run smoother operations, better serve patients, and make decisions based on real data  without the complexity that often comes with enterprise healthcare software.",
     solutionsLabel: "Our Solutions Include",
     solutions: [
       "Telehealth & Virtual Care Platforms",
@@ -27,7 +27,7 @@ const services = [
     ],
     taglineLabel: "Why It Matters",
     tagline:
-      "Healthcare providers require secure, efficient, and patient-centred digital systems that support both clinical excellence and operational sustainability.",
+      "Good digital infrastructure makes clinical work easier and administrative work lighter. We build systems designed to last  not just to launch.",
     image:
       "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80&auto=format&fit=crop",
     imageAlt: "Healthcare technology and software",
@@ -53,9 +53,9 @@ const services = [
       "Corporate Healthcare Support",
       "Priority Healthcare Access",
     ],
-    taglineLabel: "Patient-Centred Coordination",
+    taglineLabel: "How We Work",
     tagline:
-      "We act as a trusted healthcare partner, helping clients navigate complex healthcare systems with confidence and ease.",
+      "We handle the coordination so clients can focus on getting the right care, not on figuring out the system.",
     image:
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&auto=format&fit=crop",
     imageAlt: "Medical concierge and healthcare coordination",
@@ -66,9 +66,9 @@ const services = [
     number: "03",
     title: "Hospital Management Services",
     intro:
-      "We support healthcare institutions with operational, strategic, and administrative management solutions that improve service delivery, efficiency, governance, and sustainability.",
+      "We help hospitals and health institutions run better  from day-to-day operations through to strategic planning and governance.",
     description:
-      "Our experience spans public and private healthcare systems, healthcare transformation projects, and operational restructuring initiatives.",
+      "We've worked across public and private healthcare systems, including transformation projects and operational turnarounds.",
     solutionsLabel: "Our Services Include",
     solutions: [
       "Hospital Operations Management",
@@ -81,9 +81,9 @@ const services = [
       "Quality Assurance & Compliance",
       "Healthcare PPP & Infrastructure Advisory",
     ],
-    taglineLabel: "Building Sustainable Healthcare Systems",
+    taglineLabel: "What Good Looks Like",
     tagline:
-      "We help healthcare organisations strengthen operational performance while improving patient experience, workforce efficiency, and long-term growth.",
+      "Better-run hospitals deliver better care. We work on the operational side so clinical teams can focus on what they do best.",
     image:
       "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80&auto=format&fit=crop",
     imageAlt: "Hospital management and operations",
@@ -94,9 +94,9 @@ const services = [
     number: "04",
     title: "Medical Equipment Supply & Technical Support",
     intro:
-      "We supply high-quality medical and diagnostic equipment from globally recognised manufacturers, supported by technical expertise and after-sales support services.",
+      "We source and supply medical and diagnostic equipment from established manufacturers, and we handle everything from procurement through to installation.",
     description:
-      "We support healthcare facilities with end-to-end medical equipment procurement, deployment, installation, and maintenance solutions.",
+      "We manage the full process  finding the right equipment, getting it delivered, installed, and maintained. Your team gets the tools they need, without the procurement headache.",
     solutionsLabel: "Equipment Categories",
     solutions: [
       "Radiology & Imaging Equipment",
@@ -109,11 +109,11 @@ const services = [
       "Telemedicine Hardware",
       "Healthcare IT Infrastructure",
     ],
-    taglineLabel: "End-to-End Delivery",
+    taglineLabel: "From Order to In Use",
     tagline:
-      "From procurement to deployment and ongoing technical support, we help healthcare providers build reliable and future-ready diagnostic ecosystems.",
+      "We handle sourcing, delivery, installation, and maintenance  so equipment gets into use quickly and stays working.",
     image:
-      "https://images.unsplash.com/photo-1516549655669-df083f9d4e6b?w=800&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80&auto=format&fit=crop",
     imageAlt: "Medical equipment and diagnostic technology",
     reversed: true,
   },
@@ -122,9 +122,9 @@ const services = [
     number: "05",
     title: "Clinical & Non-Clinical Training",
     intro:
-      "We provide workforce development programmes designed to strengthen healthcare capacity, improve operational standards, and support continuous professional development.",
+      "We run training programmes for clinical staff, administrators, and operational teams across healthcare organisations.",
     description:
-      "Our training solutions are tailored for healthcare professionals, administrators, operational teams, and healthcare organisations.",
+      "Good systems only work when the people using them are confident. Our training covers both clinical and non-clinical roles  practical, structured, and designed for the healthcare environment.",
     solutionsLabel: "Training Areas",
     solutions: [
       "Clinical Skills Development",
@@ -137,9 +137,9 @@ const services = [
       "Project & Change Management",
       "Non-Clinical Workforce Development",
     ],
-    taglineLabel: "Empowering Healthcare Teams",
+    taglineLabel: "Why Training Matters",
     tagline:
-      "Strong healthcare systems depend on capable people. Our training programmes build confident, competent, and future-ready healthcare professionals.",
+      "The best infrastructure means little if teams aren't equipped to use it. We make sure the people side keeps up with the systems side.",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80&auto=format&fit=crop",
     imageAlt: "Healthcare training and professional development",
@@ -149,7 +149,7 @@ const services = [
 
 export function meta() {
   return [
-    { title: "Services — Octave Smartcare" },
+    { title: "Services  Octave Smartcare" },
     {
       name: "description",
       content:
