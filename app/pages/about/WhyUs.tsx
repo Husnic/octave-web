@@ -70,12 +70,6 @@ export default function WhyUs() {
               alt="Modern hospital infrastructure"
               className="rounded-2xl shadow-xl w-full h-96 lg:h-[560px] object-cover"
             />
-            <div className="absolute -bottom-6 -left-6 bg-dark text-white rounded-2xl p-6 shadow-xl hidden lg:block">
-              <p className="text-xs text-white/60 uppercase tracking-widest mb-1">
-                Serving
-              </p>
-              <p className="text-xl font-display">8+ Industries</p>
-            </div>
           </div>
         </div>
 

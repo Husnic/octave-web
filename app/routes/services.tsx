@@ -119,7 +119,7 @@ const services = [
   {
     id: "training",
     number: "05",
-    title: "Clinical & Non-Clinical Training",
+    title: "Training and Capacity Development",
     intro:
       "We run training programmes for clinical staff, administrators, and operational teams across healthcare organisations.",
     description:

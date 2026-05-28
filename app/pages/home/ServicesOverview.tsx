@@ -13,7 +13,7 @@ const services = [
     number: "02",
     title: "Medical Concierge Services",
     description:
-      "Premium, personalised healthcare coordination for individuals, executives, corporates, and international patients — from specialist referrals to medical travel.",
+      "Premium, personalised healthcare coordination for individuals, executives, corporates, and international patients, from specialist referrals to medical travel.",
     link: "/services#concierge",
     image: "/images/concierge.jpeg",
   },
@@ -36,7 +36,7 @@ const services = [
   },
   {
     number: "05",
-    title: "Clinical & Non-Clinical Training",
+    title: "Training and Capacity Development",
     description:
       "Workforce development programmes for healthcare professionals, administrators, and operational teams to build capacity and improve standards.",
     link: "/services#training",

@@ -13,10 +13,6 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-20 lg:pt-36 lg:pb-28">
         <div className="max-w-3xl">
-          <span className="inline-block text-accent text-xs font-semibold uppercase tracking-widest mb-6">
-            Healthcare Innovation
-          </span>
-
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display text-white leading-tight mb-6">
             Intelligent Healthcare Infrastructure for a{" "}
             <span className="text-gradient">Smarter Future</span>
