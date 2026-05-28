@@ -21,7 +21,7 @@ export default function ContactForm() {
 
     const data = Object.fromEntries(
       new FormData(e.currentTarget).entries()
-    ) as FormState;
+    ) as unknown as FormState;
 
     try {
       const res = await fetch("/.netlify/functions/contact", {

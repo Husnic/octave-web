@@ -1,0 +1,119 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" opacity="0.07"/>
+    </pattern>
+    <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3F51B5"/>
+      <stop offset="100%" style="stop-color:#4DD0E1"/>
+    </linearGradient>
+    <linearGradient id="rightGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#1A237E;stop-opacity:0.7"/>
+    </linearGradient>
+    <clipPath id="bounds">
+      <rect width="1200" height="630"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="#263238"/>
+
+  <!-- Right corner gradient -->
+  <rect x="600" y="0" width="600" height="630" fill="url(#rightGlow)"/>
+
+  <!-- Dot grid -->
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Decorative rings (right) -->
+  <g clip-path="url(#bounds)" opacity="1">
+    <circle cx="980" cy="315" r="280" fill="none" stroke="#3F51B5" stroke-width="1" opacity="0.20"/>
+    <circle cx="980" cy="315" r="210" fill="none" stroke="#3F51B5" stroke-width="1" opacity="0.18"/>
+    <circle cx="980" cy="315" r="140" fill="#3F51B5" opacity="0.07"/>
+    <circle cx="980" cy="315" r="80" fill="#4DD0E1" opacity="0.08"/>
+  </g>
+
+  <!-- Medical cross icon (right, centered in rings) -->
+  <rect x="956" y="295" width="48" height="16" rx="5" fill="#4DD0E1" opacity="0.35"/>
+  <rect x="972" y="279" width="16" height="48" rx="5" fill="#4DD0E1" opacity="0.35"/>
+
+  <!-- Accent top bar -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#topBar)"/>
+
+  <!-- Left vertical accent line -->
+  <rect x="80" y="80" width="3" height="470" fill="#3F51B5" opacity="0.25" rx="2"/>
+
+  <!-- Logo mark -->
+  <circle cx="118" cy="110" r="30" fill="#3F51B5" opacity="0.18"/>
+  <circle cx="118" cy="110" r="20" fill="#3F51B5" opacity="0.25"/>
+  <text
+    x="118" y="118"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="24"
+    font-weight="700"
+    fill="#4DD0E1"
+  >O</text>
+
+  <!-- Brand name -->
+  <text
+    x="108"
+    y="260"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="72"
+    font-weight="400"
+    fill="#FFFFFF"
+    letter-spacing="-2"
+  >Octave</text>
+  <text
+    x="108"
+    y="344"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="72"
+    font-weight="400"
+    fill="#FFFFFF"
+    letter-spacing="-2"
+  >Smartcare</text>
+
+  <!-- Accent divider line -->
+  <rect x="108" y="366" width="96" height="3" fill="#4DD0E1" rx="2"/>
+
+  <!-- Tagline -->
+  <text
+    x="108"
+    y="414"
+    font-family="'Helvetica Neue', Arial, sans-serif"
+    font-size="22"
+    font-weight="400"
+    fill="#90A4AE"
+    letter-spacing="0.5"
+  >Intelligent Healthcare Infrastructure</text>
+
+  <!-- Service pills row -->
+  <!-- Pill 1 -->
+  <rect x="108" y="448" width="136" height="28" rx="14" fill="#3F51B5" opacity="0.25"/>
+  <text x="176" y="467" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#90CAF9">Technology</text>
+  <!-- Pill 2 -->
+  <rect x="254" y="448" width="120" height="28" rx="14" fill="#3F51B5" opacity="0.25"/>
+  <text x="314" y="467" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#90CAF9">Management</text>
+  <!-- Pill 3 -->
+  <rect x="384" y="448" width="108" height="28" rx="14" fill="#3F51B5" opacity="0.25"/>
+  <text x="438" y="467" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#90CAF9">Equipment</text>
+  <!-- Pill 4 -->
+  <rect x="502" y="448" width="96" height="28" rx="14" fill="#3F51B5" opacity="0.25"/>
+  <text x="550" y="467" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#90CAF9">Training</text>
+
+  <!-- URL bottom left -->
+  <text
+    x="108"
+    y="574"
+    font-family="'Helvetica Neue', Arial, sans-serif"
+    font-size="18"
+    fill="#546E7A"
+    letter-spacing="0.3"
+  >octavesmartcare.co.uk</text>
+
+  <!-- Globe dot (before URL) -->
+  <circle cx="96" cy="569" r="5" fill="#546E7A" opacity="0.6"/>
+  <circle cx="96" cy="569" r="5" fill="none" stroke="#546E7A" stroke-width="1" opacity="0.4"/>
+</svg>

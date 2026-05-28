@@ -16,7 +16,6 @@ export default function ContactHero() {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-surface to-transparent pointer-events-none" />
     </section>
   );
 }

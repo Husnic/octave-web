@@ -23,6 +23,14 @@ const industries = [
 export default function IndustriesSection() {
   return (
     <section className="py-20 lg:py-28 bg-dark relative overflow-hidden">
+      <div
+        className="absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage: "url('/assets/pattern.png')",
+          backgroundSize: "400px",
+          backgroundRepeat: "repeat",
+        }}
+      />
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block text-accent text-xs font-semibold uppercase tracking-widest mb-3">

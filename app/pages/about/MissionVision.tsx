@@ -30,7 +30,7 @@ export default function MissionVision() {
 
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80&auto=format&fit=crop"
+              src="/images/wellness-assessment.jpeg"
               alt="Healthcare professionals at work"
               className="rounded-2xl shadow-xl w-full h-96 lg:h-[500px] object-cover"
             />

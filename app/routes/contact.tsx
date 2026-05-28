@@ -3,8 +3,15 @@ import Footer from "~/components/Footer";
 import ContactHero from "~/pages/contact/ContactHero";
 import ContactForm from "~/pages/contact/ContactForm";
 import ContactInfo from "~/pages/contact/ContactInfo";
+import { useSEO } from "~/hooks/useSEO";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Us",
+    description:
+      "Get in touch with Octave Smartcare. We work with hospitals, governments, and healthcare organisations across Lagos and London.",
+    canonical: "/contact",
+  });
   return (
     <>
       <Navbar />

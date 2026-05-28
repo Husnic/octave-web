@@ -34,7 +34,6 @@ export default function ServicesHero() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none" />
     </section>
   );
 }

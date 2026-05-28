@@ -6,7 +6,7 @@ export default function MissionSection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&q=80&auto=format&fit=crop"
+                src="/images/new-tower.jpeg"
                 alt="Healthcare professionals collaborating"
                 className="w-full h-80 lg:h-[480px] object-cover"
               />
@@ -40,8 +40,18 @@ export default function MissionSection() {
               className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:text-primary-dark transition-colors"
             >
               Learn About Us
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
           </div>

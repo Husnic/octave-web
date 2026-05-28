@@ -66,7 +66,7 @@ export default function WhyUs() {
 
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&auto=format&fit=crop"
+              src="/images/health-partner.png"
               alt="Modern hospital infrastructure"
               className="rounded-2xl shadow-xl w-full h-96 lg:h-[560px] object-cover"
             />

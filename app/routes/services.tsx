@@ -3,6 +3,7 @@ import Footer from "~/components/Footer";
 import ServicesHero from "~/pages/services/ServicesHero";
 import ServiceDetail from "~/pages/services/ServiceDetail";
 import CTASection from "~/pages/home/CTASection";
+import { useSEO } from "~/hooks/useSEO";
 
 const services = [
   {
@@ -28,8 +29,8 @@ const services = [
     taglineLabel: "Why It Matters",
     tagline:
       "Good digital infrastructure makes clinical work easier and administrative work lighter. We build systems designed to last  not just to launch.",
-    image:
-      "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80&auto=format&fit=crop",
+
+    image: "/images/software-development.jpeg",
     imageAlt: "Healthcare technology and software",
     reversed: false,
   },
@@ -56,8 +57,7 @@ const services = [
     taglineLabel: "How We Work",
     tagline:
       "We handle the coordination so clients can focus on getting the right care, not on figuring out the system.",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&auto=format&fit=crop",
+    image: "/images/concierge.jpeg",
     imageAlt: "Medical concierge and healthcare coordination",
     reversed: true,
   },
@@ -112,8 +112,7 @@ const services = [
     taglineLabel: "From Order to In Use",
     tagline:
       "We handle sourcing, delivery, installation, and maintenance  so equipment gets into use quickly and stays working.",
-    image:
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80&auto=format&fit=crop",
+    image: "/images/equipments.jpeg",
     imageAlt: "Medical equipment and diagnostic technology",
     reversed: true,
   },
@@ -148,6 +147,12 @@ const services = [
 ];
 
 export default function Services() {
+  useSEO({
+    title: "Our Services",
+    description:
+      "From HealthTech software and hospital management to medical concierge, equipment supply, and clinical training — Octave Smartcare covers the full spectrum of healthcare infrastructure.",
+    canonical: "/services",
+  });
   return (
     <>
       <Navbar />

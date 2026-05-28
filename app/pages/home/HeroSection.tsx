@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80&auto=format&fit=crop"
+        src="/images/hero.jpeg"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover"
@@ -57,8 +57,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
     </section>
   );
 }
