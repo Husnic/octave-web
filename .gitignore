@@ -2,6 +2,7 @@
 .env
 .env*
 /node_modules/
+dist
 
 # React Router
 /.react-router/

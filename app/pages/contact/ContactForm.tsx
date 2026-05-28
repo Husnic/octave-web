@@ -1,20 +1,49 @@
-import { useEffect, useRef } from "react";
-import { useFetcher } from "react-router";
+import { useState, useRef } from "react";
+
+interface FormState {
+  name: string;
+  email: string;
+  company: string;
+  service: string;
+  message: string;
+}
 
 export default function ContactForm() {
-  const fetcher = useFetcher<{ success: boolean; error?: string }>();
   const formRef = useRef<HTMLFormElement>(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const isSubmitting = fetcher.state !== "idle";
-  const result = fetcher.data;
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError(null);
 
-  useEffect(() => {
-    if (result?.success) {
-      formRef.current?.reset();
+    const data = Object.fromEntries(
+      new FormData(e.currentTarget).entries()
+    ) as FormState;
+
+    try {
+      const res = await fetch("/.netlify/functions/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json() as { success: boolean; error?: string };
+      if (json.success) {
+        setSuccess(true);
+        formRef.current?.reset();
+      } else {
+        setError(json.error ?? "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Could not send message. Please email us directly.");
+    } finally {
+      setSubmitting(false);
     }
-  }, [result]);
+  };
 
-  if (result?.success) {
+  if (success) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
         <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
@@ -47,15 +76,10 @@ export default function ContactForm() {
     "w-full border border-gray-soft rounded-xl px-4 py-3 text-sm text-dark bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-muted/50";
 
   return (
-    <fetcher.Form
-      ref={formRef}
-      method="post"
-      action="/contact"
-      className="flex flex-col gap-5"
-    >
-      {result?.error && (
+    <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-5">
+      {error && (
         <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700">
-          {result.error}
+          {error}
         </div>
       )}
 
@@ -139,10 +163,10 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        disabled={isSubmitting}
+        disabled={submitting}
         className="w-full bg-primary text-white font-medium py-4 rounded-full hover:bg-primary-dark disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-200 text-sm mt-2 flex items-center justify-center gap-2"
       >
-        {isSubmitting ? (
+        {submitting ? (
           <>
             <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
               <circle
@@ -165,6 +189,6 @@ export default function ContactForm() {
           "Send Message"
         )}
       </button>
-    </fetcher.Form>
+    </form>
   );
 }

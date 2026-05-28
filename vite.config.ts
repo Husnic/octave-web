@@ -1,16 +1,13 @@
-import { reactRouter } from "@react-router/dev/vite";
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
-
-import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { resolve } from "path";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    reactRouter(),
-    // netlifyPlugin()
-  ],
+  plugins: [tailwindcss(), react()],
   resolve: {
-    tsconfigPaths: true,
+    alias: {
+      "~": resolve(__dirname, "app"),
+    },
   },
 });

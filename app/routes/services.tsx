@@ -147,17 +147,6 @@ const services = [
   },
 ];
 
-export function meta() {
-  return [
-    { title: "Services  Octave Smartcare" },
-    {
-      name: "description",
-      content:
-        "Explore Octave Smartcare's five integrated service lines: HealthTech software, medical concierge, hospital management, medical equipment, and clinical training.",
-    },
-  ];
-}
-
 export default function Services() {
   return (
     <>
